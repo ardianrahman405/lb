@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects LabuanBajo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100">
+  <!-- Awal Navbar -->
+  <!-- Awal Navbar -->
+  <!-- Awal Navbar -->
+  <nav class="bg-blue-800 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <!-- Logo and LabuanBajo text -->
+        <div class="flex items-center">
+          <img src="images/logonavbar.png" alt="Logo LabuanBajo" class="h-8 w-auto mr-4">
+          <div class="text-white font-bold text-xl">
+            LabuanBajo
+          </div>
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden sm:flex sm:ml-6 space-x-4">
+          <a href="#"
+            class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">Home</a>
+          <a href="#"
+            class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">About</a>
+          <a href="#"
+            class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">Wisata
+            Alam</a>
+          <a href="#"
+            class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">Keindahan
+            Alam</a>
+          <a href="#"
+            class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">Fauna</a>
+
+          <!-- Dropdown Menu -->
+          <div class="relative">
+            <button
+              class="text-white hover:bg-indigo-700 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">
+              Anggota
+            </button>
+            <div
+              class="absolute right-0 hidden bg-white text-indigo-600 shadow-lg rounded-md mt-2 space-y-2 w-40 px-4 py-2 group-hover:block">
+              <a href="#" class="block py-1">Blog</a>
+              <a href="#" class="block py-1">FAQs</a>
+              <a href="#" class="block py-1">Support</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu Button (Mobile) - KAnan -->
+        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+          <button id="mobile-menu-button"
+            class="relative flex flex-col items-center justify-center space-y-1 p-2 text-white focus:outline-none">
+            <span class="hamburger-line block w-6 h-0.5 bg-white transition duration-300 ease-in-out line1"></span>
+            <span class="hamburger-line block w-6 h-0.5 bg-white transition duration-300 ease-in-out line2"></span>
+            <span class="hamburger-line block w-6 h-0.5 bg-white transition duration-300 ease-in-out line3"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="sm:hidden" id="mobile-menu" style="display: none;">
+      <div
+        class="px-6 py-8 space-y-6 bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 rounded-lg shadow-lg transform transition-all duration-500 ease-in-out">
+
+        <!-- Menu Item -->
+        <a href="#"
+          class="text-white block px-6 py-3 rounded-md text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          Home
+        </a>
+        <a href="#"
+          class="text-white block px-6 py-3 rounded-md text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          About
+        </a>
+        <a href="#"
+          class="text-white block px-6 py-3 rounded-md text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          Wisata Alam
+        </a>
+        <a href="#"
+          class="text-white block px-6 py-3 rounded-md text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          Keindahan Alam
+        </a>
+        <a href="#"
+          class="text-white block px-6 py-3 rounded-md text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          Fauna LabuanBajo
+        </a>
+        <a href="#"
+          class="text-white block px-6 py-3 rounded-md text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          Anggota
+        </a>
+
+        <!-- Close Menu Button -->
+        <button onclick="closeMenu()"
+          class="text-white block px-6 py-3 text-xl font-semibold transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          Close Menu
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+  <!-- Akhir Navbar -->
+  <!-- Akhir Navbar -->
+
+  <!-- Awal Home -->
+  <!-- Awal Home -->
+  <!-- Awal Home -->
+  <section class="parallax">
+    <!-- Parallax efek -->
+    <div class="video-background">
+      <video autoplay muted loop class="video-element">
+        <source src="images/WhatsApp Video 2025-01-08 at 20.39.28_9185d060.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="text-center text-white px-6 md:px-12 z-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 fadeInUp">Selamat Datang di Website Kami
+      </h1>
+      <p class="text-lg md:text-2xl mb-6 fadeInUp">Kami membantu Anda mewujudkan solusi digital yang inovatif dan
+        efektif.</p>
+      <a href="#about"
+        class="bg-blue-800 text-white py-3 px-8 rounded-full text-xl hover:bg-indigo-500 transition duration-300 ease-in-out transform hover:scale-105 mt-4 fadeInUp">Pelajari
+        Lebih Lanjut</a>
+    </div>
+  </section>
+  <!-- Hiasan Dibawah Home warna -->
+  <div class="relative">
+    <div
+      class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-blue-800 via-blue-600 to-transparent opacity-70">
+    </div>
+  </div>
+  <!-- Akhir Home -->
+  <!-- Akhir Home -->
+  <!-- Akhir Home -->
+
+  <!-- Awal Section untuk deksirpsi -->
+  <!-- Awal Section untuk deksirpsi -->
+  <!-- Awal Section untuk deksirpsi -->
+  <section class="bg-gradient-to-r from-sky-100 to-blue-100 py-20 px-6 lg:px-20">
+    <div class="max-w-7xl mx-auto text-center">
+
+      <!-- Gambar Labuan Bajo dengan Animasi dan Gradient Overlay -->
+      <div
+        class="relative w-full max-w-3xl mx-auto mb-10 rounded-xl overflow-hidden shadow-lg group transform transition-all duration-700 ease-in-out hover:scale-105 hover:shadow-2xl">
+
+        <!-- Gambar dengan Animasi Slide dan Zoom -->
+        <img src="images/image.png" alt="Labuan Bajo"
+          class="w-full h-80 object-cover transform transition duration-1000 ease-in-out group-hover:scale-110 group-hover:translate-y-4">
+
+        <!-- Overlay Gelap untuk Gambar -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-70 transition-opacity duration-500 ease-in-out">
+        </div>
+
+        <!-- Wrapper untuk Teks Overlay (Agar Teks Tidak Terkena Blur) -->
+        <div
+          class="absolute inset-0 flex justify-center items-center text-blue-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+          <h3 class="text-2xl font-semibold text-shadow-lg">Selamat Datang di Labuan Bajo</h3>
+        </div>
+
+        <!-- Dekorasi Gradient di Atas Gambar -->
+        <div
+          class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-blue-800 via-blue-600 to-transparent opacity-70">
+        </div>
+      </div>
+    </div>
+
+    <!-- Deskripsi Labuan Bajo -->
+    <div class="max-w-3xl mx-auto text-left px-4">
+      <h2 class="text-3xl font-bold text-blue-800 mb-6">Labuan Bajo: Surga Tersembunyi di Flores</h2>
+      <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+        Labuan Bajo adalah pintu gerbang menuju Taman Nasional Komodo, salah satu keajaiban dunia. Terletak
+        di ujung barat Pulau Flores, Labuan Bajo menawarkan panorama alam yang luar biasa, dengan perairan
+        yang jernih, pantai yang eksotis, dan kehidupan laut yang mempesona. Tidak hanya terkenal dengan
+        Komodo, Labuan Bajo juga menjadi surga bagi para penyelam dan penggemar trekking.
+      </p>
+      <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+        Jelajahi keindahan pulau-pulau kecil di sekitar Labuan Bajo, nikmati matahari terbenam yang
+        spektakuler, dan rasakan suasana damai di tengah alam yang masih asri. Labuan Bajo bukan hanya
+        tempat untuk liburan, tetapi juga untuk merasakan kedamaian dan ketenangan yang luar biasa.
+      </p>
+
+      <!-- Tombol CTA (Call to Action) dengan Hover Efek yang Elegan -->
+      <div class="text-center mt-10">
+        <a href="#more-info"
+          class="inline-block px-8 py-4 bg-blue-800 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 hover:scale-110 transform transition duration-300 ease-in-out">
+          Pelajari Lebih Lanjut
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Akhir untuk Deskirpsi -->
+  <!-- Akhir untuk Deskirpsi -->
+  <!-- Akhir untuk Deskirpsi -->
+
+  <!-- awal Wisata ALAm -->
+  <!-- awal Wisata ALAm -->
+  <!-- awal Wisata ALAm -->
+  <section class="relative py-24 bg-gradient-to-r from-teal-600 to-blue-700">
+    <div class="absolute inset-0 z-0">
+      <!-- Background Image -->
+      <img src="images/bgwisata.png" alt="Labuan Bajo" class="w-full h-full object-cover opacity-40">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Heading dengan penyesuaian responsif -->
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center text-white mb-16 tracking-wide">
+        Eksplorasi Wisata Alam Labuan Bajo
+      </h2>
+
+      <!-- Grid Layout dengan 6 Card dan Animasi Hover -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12">
+
+        <!-- Card 1: Pulau Padar -->
+        <div
+          class="group relative overflow-hidden rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+          <img src="images/pulaupadar.png" alt="Pulau Komodo"
+            class="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-75">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black opacity-60 group-hover:opacity-50 transition-all duration-300">
+          </div>
+          <div class="absolute bottom-6 left-6 p-6 text-white z-10">
+            <h3 class="text-3xl font-semibold mb-3">Pulau Padar</h3>
+            <p class="text-lg mb-4">Dengan bentuknya yang khas, Pulau Padar menawarkan panorama yang sangat ikonik dari
+              puncak tertingginya</p>
+            <a href="#"
+              class="text-yellow-300 hover:text-yellow-400 font-bold text-lg transition-all duration-300">Pelajari lebih
+              lanjut →</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Pink Beach -->
+        <div
+          class="group relative overflow-hidden rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+          <img src="images/pantaipink.png" alt="Pink Beach"
+            class="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-75">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black opacity-60 group-hover:opacity-50 transition-all duration-300">
+          </div>
+          <div class="absolute bottom-6 left-6 p-6 text-white z-10">
+            <h3 class="text-3xl font-semibold mb-3">Pink Beach</h3>
+            <p class="text-lg mb-4">Nikmati pasir berwarna pink yang eksotis, sempurna untuk berjemur dan snorkeling di
+              perairan yang jernih.</p>
+            <a href="#"
+              class="text-yellow-300 hover:text-yellow-400 font-bold text-lg transition-all duration-300">Pelajari lebih
+              lanjut →</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Taman Nasional Komodo -->
+        <div
+          class="group relative overflow-hidden rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+          <img src="images/tmnkomodo.png" alt="Taman Nasional Komodo"
+            class="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-75">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black opacity-60 group-hover:opacity-50 transition-all duration-300">
+          </div>
+          <div class="absolute bottom-6 left-6 p-6 text-white z-10">
+            <h3 class="text-3xl font-semibold mb-3">Taman Nasional Komodo</h3>
+            <p class="text-lg mb-4">Eksplorasi kekayaan hayati dan satwa langka di kawasan konservasi yang sangat
+              penting di Indonesia.</p>
+            <a href="#"
+              class="text-yellow-300 hover:text-yellow-400 font-bold text-lg transition-all duration-300">Pelajari lebih
+              lanjut →</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Bukit cinta -->
+        <div
+          class="group relative overflow-hidden rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+          <img src="images/bukitcinta.png" alt="Labuan Bajo Bay"
+            class="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-75">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black opacity-60 group-hover:opacity-50 transition-all duration-300">
+          </div>
+          <div class="absolute bottom-6 left-6 p-6 text-white z-10">
+            <h3 class="text-3xl font-semibold mb-3">Bukit Cinta</h3>
+            <p class="text-lg mb-4">Dengan keindahan alam dan suasana yang damai, Bukit Cinta Labuan Bajo menawarkan
+              sebuah esensi romantis.</p>
+            <a href="#"
+              class="text-yellow-300 hover:text-yellow-400 font-bold text-lg transition-all duration-300">Pelajari lebih
+              lanjut →</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Pulau kanawa -->
+        <div
+          class="group relative overflow-hidden rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+          <img src="images/pulaukanawa.png" alt="Rinca Island"
+            class="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-75">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black opacity-60 group-hover:opacity-50 transition-all duration-300">
+          </div>
+          <div class="absolute bottom-6 left-6 p-6 text-white z-10">
+            <h3 class="text-3xl font-semibold mb-3">Pulau kanawa</h3>
+            <p class="text-lg mb-4">pemandangan ragam makhluk laut seperti ikan hiu kecil dan panorama terumbu karang
+              yang memukau.</p>
+            <a href="#"
+              class="text-yellow-300 hover:text-yellow-400 font-bold text-lg transition-all duration-300">Pelajari lebih
+              lanjut →</a>
+          </div>
+        </div>
+
+        <!-- Card 6: Wae Rebo  -->
+        <div
+          class="group relative overflow-hidden rounded-xl shadow-2xl transform transition duration-500 hover:scale-105">
+          <img src="images/waerebo.png" alt="Kalong Island"
+            class="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-75">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black opacity-60 group-hover:opacity-50 transition-all duration-300">
+          </div>
+          <div class="absolute bottom-6 left-6 p-6 text-white z-10">
+            <h3 class="text-3xl font-semibold mb-3">Desa Wae Rebo</h3>
+            <p class="text-lg mb-4">Desa Wae Rebo begitu indah karena dikelilingi hutan tropis dengan keberagaman
+              hayati.</p>
+            <a href="#"
+              class="text-yellow-300 hover:text-yellow-400 font-bold text-lg transition-all duration-300">Pelajari lebih
+              lanjut →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Wisata Alam -->
+  <!-- Akhir Wisata Alam -->
+  <!-- Akhir Wisata Alam -->
+
+  <!-- Awal untuk keindahan alam -->
+  <!-- Awal untuk keindahan alam -->
+  <!-- Awal untuk keindahan alam -->
+  <section class="bg-gradient-to-b from-blue-500 to-blue-900 text-white py-16 relative overflow-hidden">
+    <div class="container mx-auto px-6 lg:px-20 relative z-10">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h2 class="text-4xl font-extrabold mb-4 relative sm:text-3xl md:text-4xl lg:text-5xl glow-border">
+          Keindahan Labuan Bajo
+        </h2>
+        <p class="text-lg text-blue-200">
+          Temukan surga tersembunyi dengan pesona alam dan keajaiban budaya yang memikat hati.
+        </p>
+      </div>
+      <!-- Carousel -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide group bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="images/k4.png" alt="Pantai Labuan Bajo" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Pantai Waewicu</h3>
+              <p class="text-gray-600">Pesona yang tak kalah dengan tempat wisata Bali</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="swiper-slide group bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="images/k5.png" alt="Pulau Komodo" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Pantai Pede</h3>
+              <p class="text-gray-600">Pantai memanjang dengan hamparan pasir putih lembut</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="swiper-slide group bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="images/k1.png" alt="Keajaiban Laut" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Pantai Wae Rana</h3>
+              <p class="text-gray-600">Surga bagi para pencinta pantai yang memesona</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="swiper-slide group bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="images/k2.png" alt="Tebing Ikonik" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Pantai Kanawa</h3>
+              <p class="text-gray-600">Keindahan terumbu karang yang masih alami</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="swiper-slide group bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="images/k3.png" alt="Hutan Mangrove" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Hutan Mangrove</h3>
+              <p class="text-gray-600">Jelajahi keindahan alam liar di Labuan Bajo.</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="swiper-slide group bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="images/k6.png" alt="Pulau Padar" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition">Taka Makassar</h3>
+              <p class="text-gray-600">Pemandangan dari ketinggian yang menakjubkan.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div
+          class="swiper-button-next flex items-center justify-center text-white bg-blue-600 hover:bg-blue-800 rounded-full w-10 h-10 shadow-lg">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div
+          class="swiper-button-prev flex items-center justify-center text-white bg-blue-600 hover:bg-blue-800 rounded-full w-10 h-10 shadow-lg">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tambahkan JS Swiper di bawah -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+  <!-- Akhir untuk keindahan alam -->
+  <!-- Akhir untuk keindahan alam -->
+  <!-- Akhir untuk keindahan alam -->
+
+  <!-- awal section Fauna -->
+  <!-- awal section Fauna -->
+  <!-- awal section Fauna -->
+  <section class="bg-gradient-to-b from-blue-900 to-blue-600 py-16 px-4 text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-8">Fauna Labuan Bajo</h2>
+      <p class="text-xl mb-12">
+        Labuan Bajo, sebuah surga tersembunyi di Indonesia, kaya akan fauna yang luar biasa. Temukan keanekaragaman hayati yang menakjubkan di sini!
+      </p>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl hover:shadow-lg hover:ring-4 hover:ring-blue-400 transition-all duration-300">
+          <img src="images/f1.png" alt="Fauna 1" class="w-full h-48 object-cover rounded-t-2xl">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-blue-600">Komodo Dragon</h3>
+            <p class="text-gray-600 mt-4">Komodo Dragon adalah salah satu spesies reptil terbesar di dunia yang hanya dapat ditemukan di Pulau Komodo.</p>
+          </div>
+        </div>
+  
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl hover:shadow-lg hover:ring-4 hover:ring-blue-400 transition-all duration-300">
+          <img src="images/f2.png" alt="Fauna 2" class="w-full h-48 object-cover rounded-t-2xl">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-blue-600">Rusa Timor</h3>
+            <p class="text-gray-600 mt-4">Rusa Timor adalah salah satu hewan khas yang dapat ditemukan di Labuan Bajo, terutama di Taman Nasional Komodo.</p>
+          </div>
+        </div>
+  
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl hover:shadow-lg hover:ring-4 hover:ring-blue-400 transition-all duration-300">
+          <img src="images/f3.png" alt="Fauna 3" class="w-full h-48 object-cover rounded-t-2xl">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-blue-600">Burung Cendrawasih</h3>
+            <p class="text-gray-600 mt-4">Burung Cendrawasih terkenal dengan keindahan warna bulunya dan menjadi simbol keanekaragaman hayati di Indonesia.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Button Kunjungi Lebih Lengkap -->
+      <a href="fauna.html" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-md hover:bg-blue-400 hover:text-white transition duration-300">
+        Kunjungi Lebih Lengkap
+      </a>
+    </div>
+  </section>
+  
+  <!-- Akhir section FAuna -->
+  <!-- Akhir section FAuna -->
+  <!-- Akhir section FAuna -->
+  <!-- Section Layanan -->
+  <section id="services" class="py-16 px-4 bg-gray-50">
+    <h2 class="text-3xl text-center font-bold mb-12">Layanan Kami</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Layanan 1 -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+        <h3 class="text-2xl font-semibold mb-4">Desain Website</h3>
+        <p class="text-gray-700">Desain website modern yang user-friendly dan responsif untuk pengalaman
+          pengguna yang lebih baik.</p>
+      </div>
+      <!-- Layanan 2 -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+        <h3 class="text-2xl font-semibold mb-4">Pengembangan Aplikasi</h3>
+        <p class="text-gray-700">Aplikasi custom yang dapat membantu meningkatkan efisiensi dan produktivitas
+          bisnis Anda.</p>
+      </div>
+      <!-- Layanan 3 -->
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+        <h3 class="text-2xl font-semibold mb-4">SEO & Digital Marketing</h3>
+        <p class="text-gray-700">Strategi SEO dan pemasaran digital untuk memastikan bisnis Anda mendapatkan
+          visibilitas online maksimal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Js untuk hamburger -->
+  <script>
+    //Awal untuk Hamburger Menu
+    //Awal untuk Hamburger Menu
+    // Toggle menu pada mobile
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerLines = mobileMenuButton.querySelectorAll('.hamburger-line');
+
+    mobileMenuButton.addEventListener('click', () => {
+      // Toggle visibility menu
+      mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+      // Toggle hamburger animation
+      mobileMenuButton.classList.toggle('open');
+    });
+
+    //Akhir untuk Hamburger Menu
+    //Akhir untuk Hamburger Menu
+  </script>
+  <!-- Akhir js untuk hamburger -->
+
+  <!-- JS untuk parallax -->
+  <script>
+    // Menambahkan event listener untuk mendeteksi scroll
+    window.addEventListener('scroll', function () {
+      // Ambil posisi scroll vertikal
+      let scrollPosition = window.pageYOffset;
+
+      // Ambil elemen video background
+      let videoBackground = document.querySelector('.video-background');
+
+      // Ubah posisi video berdasarkan scroll (efek parallax)
+      videoBackground.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    });
+
+  </script>
+  <!-- Akhir Js untuk pArallax -->
+</body>
+
+</html>

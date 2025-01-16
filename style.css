@@ -1,0 +1,110 @@
+  /* Animasi hamburger */
+  .hamburger-line {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .open .line1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .open .line2 {
+    opacity: 0;
+  }
+
+  .open .line3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Animasi Paralax */
+  /* Animasi Paralax */
+  .parallax {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform: translateY(0);
+    /* Initial position of video */
+    transition: transform 0.1s linear;
+    /* Smooth transition for scroll effect */
+  }
+
+  .video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .text-center {
+    z-index: 10;
+  }
+
+  /* Animasi teks */
+  .fadeInUp {
+    animation: fadeInUp 1.5s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Seection keindahan alam */
+  /* awal keindahan */
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; /* Jarak antara teks dan border */
+    left: 0;
+    width: 100%;
+    height: 4px; /* Ketebalan border */
+    background: linear-gradient(90deg, #4c51bf, #63b3ed, #4c51bf);
+    border-radius: 2px;
+    animation: glow 2s infinite linear;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #e7d215;
+    }
+    50% {
+      box-shadow: 0 0 20px #ebee08;
+    }
+    100% {
+      box-shadow: 0 0 5px #c2db05;
+    }
+  }
+
+  /* Akhir */
